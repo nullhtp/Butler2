@@ -13,5 +13,5 @@
 <li>Currency - you say currency name (euro, yuan or dollar), assistent say currency RUB/EUR, RUB/USD or RUB/CNY.</li>
 <li>Hello - assistent greatings you.</li>
 </ul>
-<h2>How to extend command's list?<h3>
+<h2>How to extend command's list?</h2>
 <p>Only you need, it's create class whos extends AbstractFactory  class, and add dependency to main.</p>
