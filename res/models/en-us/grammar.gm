@@ -1,0 +1,23 @@
+<greeting> = (hello|hi)(mary|butler|darling)
+
+<call> = (hey)(mary)
+
+<digits0-2> = one|two|zero
+<digits3-9> = three|four|five|six|seven|eight|nine
+<digits> = <digits0-2>|<digits3-9>
+<digits10> = (ten|eleven|twelve)|(<digits3-9>)(teen)|(twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)[<digits0-2>|<digits3-9>]
+<digits100> = (<digits0-2>|<digits3-9>)(hundred)[<digits10>]
+<digits1000> = [<digits100>|<digits10>|<digits](thousand)[<digits100>|<digits10>|<digits>]
+<digits1M> = [<digits100>|<digits10>|<digits>](million)[<digits1000>]
+<digits1B> = [<digits100>|<digits10>|<digits>](billion)[<digits1M>]
+<number> = <digits1B>|<digits1M>|<digits1000>|<digits100>|<digits10>|<digits>
+<mathOperations> = minus | plus | multiply | divide
+<mathExpression> = <number> <mathOperator> <number>
+
+<currency> = dollar|euro|yuan
+
+<commands> = calculate|hello|exit| currency
+
+<params> = <number> | <mathOperations> | <currency>
+
+public <query> = <call>  [<command>] [<params>]
