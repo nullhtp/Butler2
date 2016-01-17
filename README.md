@@ -1,4 +1,6 @@
 # Butler2
+<h2>Attention!</h2>
+<p>The code without comment's ... Yet...</p>
 <h2>What is it?</h2>
 <p>It's a recognize speech assistant that executes pre-programmed commands and outstanding audio response. It's a project for learning java, by my self.</p>
 <h2>What technologies are used?</h2>
